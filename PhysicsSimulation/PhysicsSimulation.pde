@@ -73,12 +73,12 @@ void draw() {
 void mousePressed() {
   GooBall g = new GooBall(mouseX, mouseY, 25);
   
-
+  /*
   Creature a1 = g;
   Creature a2 = g; 
   int numConnectors = 0;
   float dist1 = 150;
-  float dist2 = 150;
+  float dist2 = 150;*/
 
   Creature h = g;
 
