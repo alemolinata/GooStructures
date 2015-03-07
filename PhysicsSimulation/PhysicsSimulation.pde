@@ -43,14 +43,12 @@ void setup() {
 void draw() {
   
   physics.step(1.0 / frameRate);
-  background(60, 80, 250);
+  background(20);
   noFill();
-
-  
 
   for(int i = 0; i < connectors.size(); i++) {
     Spring connector = connectors.get(i);
-    stroke(40);
+    stroke(250, 20);
     strokeWeight(2);
     line( connector.a().position().x, connector.a().position().y,  connector.b().position().x, connector.b().position().y );
   }
@@ -89,7 +87,6 @@ void mousePressed() {
       Spring spring = physics.makeSpring(g, h, 10.0, 0.1, 100);
       connectors.add(spring);
     }
-
     /*
     float distTemp = dist( h.position().x, h.position().y, mouseX, mouseY );
     println("distTemp: "+distTemp);
@@ -121,6 +118,7 @@ void mousePressed() {
     connectors.add(spring2);
     //println("added a spring");
   }*/
+
   gooBalls.add(g);
   physics.add(g);
 }
